@@ -2,7 +2,8 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>エビ揉め</title>
+  <title>test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
@@ -12,17 +13,24 @@
       align-items: center;
       min-height: 100vh;
     }
-
     video {
       width: 100%;
-      max-width: 1280px; /* 上限（消してもOK） */
+      max-width: 1280px;
       height: auto;
+      display: block;
     }
   </style>
 </head>
 
 <body>
-  <video controls preload="metadata">
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    controls
+    preload="metadata"
+  >
     <source src="./movie.mp4" type="video/mp4">
     動画を再生できません
   </video>
